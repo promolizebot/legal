@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Privacidade | Promolize Bot</title>
+    <meta name="description" content="Termos de Uso e Política de Privacidade do Promolize Bot.">
+    <!-- Tailwind CSS (Mesma versão do painel) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fonte Inter (Mesma do painel) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Estilo para a barra de rolagem ficar mais sutil no tema escuro */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4B5563;
+        }
+    </style>
+</head>
+
+<body class="antialiased font-sans bg-gray-900 text-gray-200 min-h-screen py-10 px-4 flex justify-center">
+
+    <!-- 
+      CONTAINER PRINCIPAL (O "Cartão")
+      Estilo idêntico ao bg-gray-800 p-8 rounded-2xl shadow-xl do bot_panel.html
+      Aumentei apenas o max-w para acomodar melhor o texto longo.
+    -->
+    <main class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl border border-gray-700/50">
+
+        <!-- CABEÇALHO (Consistente com o Painel de Controle) -->
+        <div class="text-center mb-10">
+            <!-- LOGO -->
+            <img src="logo/promolize-logo-fundo-transparente.png" alt="Logo Promolize" class="h-60 mx-auto mb-4">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">
+                Legal & Transparência <span class="text-blue-400">Promolize</span>
+            </h1>
+            <p class="text-gray-400">Termos de Uso e Política de Privacidade.</p>
+            <p class="text-xs text-gray-500 mt-2">Última atualização: Dezembro de 2025</p>
+        </div>
+
+        <!-- NAVEGAÇÃO INTERNA (Abas simples) -->
+        <div class="flex justify-center space-x-6 mb-10 text-sm font-semibold border-b border-gray-700 pb-4">
+            <a href="#termos"
+                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Termos
+                de Uso</a>
+            <a href="#privacidade"
+                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Privacidade</a>
+            <a href="#contato"
+                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Contato</a>
+        </div>
+
+        <!-- CONTEÚDO DOS TERMOS -->
+        <div class="space-y-12 text-gray-300 leading-relaxed">
+
+            <!-- SEÇÃO: TERMOS DE USO -->
+            <section id="termos" class="scroll-mt-8">
+                <div class="flex items-center mb-4">
+                    <div class="w-1 h-6 bg-blue-500 rounded mr-3"></div>
+                    <h2 class="text-2xl font-bold text-white">Termos de Uso</h2>
+                </div>
+
+                <div class="space-y-6 text-sm md:text-base bg-gray-900/50 p-6 rounded-xl border border-gray-700/50">
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">1. Descrição do Serviço</h3>
+                        <p>O <strong>Promolize Bot</strong> é um serviço de curadoria automatizada (Bot) que monitora,
+                            seleciona e divulga promoções de produtos vendidos por lojas parceiras (como Magazine Luiza,
+                            Amazon, Mercado Livre, entre outros). Nós <strong>não vendemos</strong> produtos
+                            diretamente, não processamos pagamentos e não realizamos entregas.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">2. Isenção de Responsabilidade (Disclaimer)
+                        </h3>
+                        <p class="mb-2">Todas as compras são realizadas diretamente no site das lojas parceiras. O
+                            Promolize não se responsabiliza por:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
+                            <li>Alterações de preço feitas pela loja após a divulgação da oferta.</li>
+                            <li>Disponibilidade de estoque.</li>
+                            <li>Problemas de entrega, garantia ou defeito dos produtos.</li>
+                        </ul>
+                        <div class="mt-3 p-3 bg-yellow-900/20 border border-yellow-700/30 rounded-lg">
+                            <p class="text-yellow-200/80 text-xs">Nota: Os preços e condições podem mudar a qualquer
+                                momento sem aviso prévio por parte dos lojistas.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">3. Divulgação de Afiliados</h3>
+                        <p>O Promolize participa de programas de associados e afiliados. Isso significa que, ao clicar
+                            em links compartilhados pelo bot e realizar uma compra, podemos receber uma comissão, sem
+                            nenhum custo adicional para o usuário. Isso ajuda a manter o serviço gratuito.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">4. Uso Aceitável</h3>
+                        <p>Você concorda em usar o bot apenas para fins pessoais e não comerciais. É proibido tentar
+                            explorar vulnerabilidades técnicas do bot ou utilizar scripts automatizados para extrair
+                            dados do nosso serviço.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO: POLÍTICA DE PRIVACIDADE -->
+            <section id="privacidade" class="scroll-mt-8">
+                <div class="flex items-center mb-4">
+                    <div class="w-1 h-6 bg-blue-500 rounded mr-3"></div>
+                    <h2 class="text-2xl font-bold text-white">Política de Privacidade</h2>
+                </div>
+
+                <div class="space-y-6 text-sm md:text-base bg-gray-900/50 p-6 rounded-xl border border-gray-700/50">
+                    <p>Sua privacidade é importante. Esta política descreve como tratamos as informações no contexto da
+                        Lei Geral de Proteção de Dados (LGPD).</p>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">1. Dados Coletados</h3>
+                        <p class="mb-2">Ao interagir com o Promolize via Telegram ou Web, podemos ter acesso a:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
+                            <li><strong>Dados Públicos do Telegram:</strong> Nome de usuário, ID numérico e foto de
+                                perfil (apenas se você iniciar uma interação direta com o bot).</li>
+                            <li><strong>Logs de Uso:</strong> Registros técnicos de interações para fins de segurança e
+                                melhoria do serviço.</li>
+                        </ul>
+                        <p class="mt-2 text-gray-400">Nós <strong>não</strong> coletamos CPF, dados bancários, endereços
+                            ou senhas.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">2. Cookies e Rastreamento de Terceiros</h3>
+                        <p>Ao clicar nos links de ofertas divulgados, você será redirecionado para sites de terceiros
+                            (as lojas). Esses sites utilizam cookies para:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
+                            <li>Rastrear a origem da visita para atribuição de comissão (afiliação).</li>
+                            <li>Processar o seu carrinho de compras.</li>
+                        </ul>
+                        <p class="mt-2">Recomendamos que leia a Política de Privacidade de cada loja parceira ao
+                            realizar uma compra.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">3. Compartilhamento de Dados</h3>
+                        <p>Nós <strong>não vendemos</strong> nem compartilhamos seus dados pessoais com terceiros para
+                            fins de marketing direto.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO: CONTATO -->
+            <section id="contato" class="text-center pt-8 border-t border-gray-700">
+                <h3 class="text-xl font-bold text-white mb-2">Ainda tem dúvidas?</h3>
+                <p class="text-gray-400 mb-6 text-sm">Para questões relacionadas a estes termos ou privacidade.</p>
+
+                <!-- Botão estilo Painel de Controle -->
+                <a href="mailto:promolizebot@gmail.com.br"
+                    class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-200 shadow-lg group">
+                    <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    Entrar em Contato
+                </a>
+            </section>
+
+        </div>
+
+        <!-- Rodapé do Cartão -->
+        <div class="mt-12 text-center border-t border-gray-700/50 pt-6">
+            <p class="text-gray-600 text-xs">
+                &copy; 2025 Promolize. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
