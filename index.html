@@ -46,24 +46,35 @@
     <main class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl border border-gray-700/50">
 
         <!-- CABEÇALHO (Consistente com o Painel de Controle) -->
-        <div class="text-center mb-10">
+        <div class="text-center mb-8">
             <!-- LOGO -->
-            <img src="promolize-logo-fundo-transparente-fonte-branca.png" alt="Logo Promolize" class="h-48 mx-auto">
+            <img src="promolize-logo-fundo-transparente-fonte-branca.png" alt="Logo Promolize" class="h-44 mx-auto">
 
             <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">
                 Legal & Transparência <span class="text-blue-400">Promolize</span>
             </h1>
             <p class="text-gray-400">Termos de Uso e Política de Privacidade.</p>
             <p class="text-xs text-gray-500 mt-2">Última atualização: Dezembro de 2025</p>
-            <!-- Botão Comunidade Telegram -->
-            <div class="mt-6 flex justify-center">
-                <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-bold text-lg shadow-xl bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-white hover:from-blue-600 hover:to-blue-500 hover:scale-105 transition-all duration-200 border-2 border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
-                    Entre na Comunidade
-                </a>
-            </div>
-        </div>
+            <!-- Botões de Comunidade (topo) - estilo consistente e responsivo -->
+             <div class="flex items-center justify-center box gap-5">
+                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
+                        <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold text-base shadow-lg hover:bg-blue-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
+                            Entre na Comunidade
+                        </a>
+                    </div>
+                                             
+                    <!-- Botões de Comunidade (final) - estilo consistente e responsivo -->
+                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
+                        <a href="https://chat.whatsapp.com/DpACLDQT1u5LXlTFuOqhn8" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-green-500 via-green-400 to-green-600 text-white rounded-lg font-semibold text-base shadow-lg hover:from-green-600 hover:to-green-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-green-300">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.71 6.11L0 24l6.2-1.62A11.92 11.92 0 0012 24c6.63 0 12-5.37 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02c-1.89 0-3.73-.5-5.34-1.44l-.38-.22-3.67.96.98-3.59-.25-.37A9.93 9.93 0 012.04 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.52-6.85c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.19.29-.75.98-.91 1.17-.17.2-.34.21-.63.07-.29-.15-1.21-.45-2.31-1.43-.85-.74-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.10-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.50h-.55c-.19 0-.51.07-.78.36-.26.29-1.00.98-1.00.98s-.36.36-.36.88.36 1.02.41 1.09c.07.1.73 1.11 1.75 1.8 1.21.81 2.22 1.03 2.58 1.15.36.1.6.07.82-.07.22-.15.88-.32 1.06-.45.17-.13.29-.19.45-.12.17.07.72.26 1.04.53.32.26.53.58.6.77.08.19.08.36.05.51-.02.15-.21.36-.45.6-.24.24-.54.56-.78.75z"/></svg>
+                            Entre na Comunidade
+                        </a>
+                    </div>
+                </div>
+             </div>
 
         <!-- NAVEGAÇÃO INTERNA (Abas simples) -->
         <div class="flex justify-center space-x-6 mb-10 text-sm font-semibold border-b border-gray-700 pb-4">
@@ -189,17 +200,28 @@
                 </a>
             </section>
 
-        </div>
+            <!-- Botões de Comunidade (topo) - estilo consistente e responsivo -->
+             <div class="flex items-center justify-center box gap-5">
+                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
+                        <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold text-base shadow-lg hover:bg-blue-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
+                            Entre na Comunidade
+                        </a>
+                    </div>
+                                             
+                    <!-- Botões de Comunidade (final) - estilo consistente e responsivo -->
+                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
+                        <a href="https://chat.whatsapp.com/DpACLDQT1u5LXlTFuOqhn8" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-green-500 via-green-400 to-green-600 text-white rounded-lg font-semibold text-base shadow-lg hover:from-green-600 hover:to-green-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-green-300">
+                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.71 6.11L0 24l6.2-1.62A11.92 11.92 0 0012 24c6.63 0 12-5.37 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02c-1.89 0-3.73-.5-5.34-1.44l-.38-.22-3.67.96.98-3.59-.25-.37A9.93 9.93 0 012.04 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.52-6.85c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.19.29-.75.98-.91 1.17-.17.2-.34.21-.63.07-.29-.15-1.21-.45-2.31-1.43-.85-.74-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.10-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.50h-.55c-.19 0-.51.07-.78.36-.26.29-1.00.98-1.00.98s-.36.36-.36.88.36 1.02.41 1.09c.07.1.73 1.11 1.75 1.8 1.21.81 2.22 1.03 2.58 1.15.36.1.6.07.82-.07.22-.15.88-.32 1.06-.45.17-.13.29-.19.45-.12.17.07.72.26 1.04.53.32.26.53.58.6.77.08.19.08.36.05.51-.02.15-.21.36-.45.6-.24.24-.54.56-.78.75z"/></svg>
+                            Entre na Comunidade
+                        </a>
+                    </div>
+                </div>
+             </div>
 
-
-        <!-- Botão Comunidade Telegram (final da página) -->
-        <div class="mt-16 flex justify-center">
-            <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-bold text-base shadow-xl bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-white hover:from-blue-600 hover:to-blue-500 hover:scale-105 transition-all duration-200 border-2 border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
-                Entre na Comunidade
-            </a>
-        </div>
+        <!-- Botões de Comunidade (final) já adicionados acima; remover duplicata -->
 
         <!-- Rodapé do Cartão -->
         <div class="mt-12 text-center border-t border-gray-700/50 pt-6">
