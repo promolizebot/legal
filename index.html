@@ -36,200 +36,138 @@
     </style>
 </head>
 
-<body class="antialiased font-sans bg-gray-900 text-gray-200 min-h-screen py-10 px-4 flex justify-center">
+<body class="antialiased min-h-screen font-sans bg-gray-950 text-gray-200 px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-12 flex justify-center">
 
-    <!-- 
-      CONTAINER PRINCIPAL (O "Cartão")
-      Estilo idêntico ao bg-gray-800 p-8 rounded-2xl shadow-xl do bot_panel.html
-      Aumentei apenas o max-w para acomodar melhor o texto longo.
-    -->
-    <main class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl border border-gray-700/50">
+    <main class="w-full max-w-5xl overflow-hidden rounded-3xl border border-gray-700/60 bg-gray-900/90 shadow-2xl shadow-black/40 backdrop-blur-sm">
+        <div class="bg-gradient-to-b from-gray-800/90 via-gray-900/95 to-gray-950 px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
 
-        <!-- CABEÇALHO (Consistente com o Painel de Controle) -->
-        <div class="text-center mb-8">
-            <!-- LOGO -->
-            <img src="promolize-logo-fundo-transparente-fonte-branca.png" alt="Logo Promolize" class="h-44 mx-auto">
+            <header class="space-y-8 text-center">
+                <div class="space-y-4">
+                    <img src="promolize-logo-fundo-transparente-fonte-branca.png" alt="Logo Promolize" class="mx-auto h-28 w-auto sm:h-36 lg:h-44">
 
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">
-                Legal & Transparência <span class="text-blue-400">Promolize</span>
-            </h1>
-            <p class="text-gray-400">Termos de Uso e Política de Privacidade.</p>
-            <p class="text-xs text-gray-500 mt-2">Última atualização: Dezembro de 2025</p>
-            <!-- Botões de Comunidade (topo) - estilo consistente e responsivo -->
-             <div class="flex items-center justify-center box gap-5">
-                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
-                        <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold text-base shadow-lg hover:bg-blue-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-blue-300">
-                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
-                            Entre na Comunidade
-                        </a>
-                    </div>
-                                             
-                    <!-- Botões de Comunidade (final) - estilo consistente e responsivo -->
-                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
-                        <a href="https://chat.whatsapp.com/DpACLDQT1u5LXlTFuOqhn8" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-green-500 via-green-400 to-green-600 text-white rounded-lg font-semibold text-base shadow-lg hover:from-green-600 hover:to-green-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-green-300">
-                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.71 6.11L0 24l6.2-1.62A11.92 11.92 0 0012 24c6.63 0 12-5.37 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02c-1.89 0-3.73-.5-5.34-1.44l-.38-.22-3.67.96.98-3.59-.25-.37A9.93 9.93 0 012.04 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.52-6.85c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.19.29-.75.98-.91 1.17-.17.2-.34.21-.63.07-.29-.15-1.21-.45-2.31-1.43-.85-.74-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.10-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.50h-.55c-.19 0-.51.07-.78.36-.26.29-1.00.98-1.00.98s-.36.36-.36.88.36 1.02.41 1.09c.07.1.73 1.11 1.75 1.8 1.21.81 2.22 1.03 2.58 1.15.36.1.6.07.82-.07.22-.15.88-.32 1.06-.45.17-.13.29-.19.45-.12.17.07.72.26 1.04.53.32.26.53.58.6.77.08.19.08.36.05.51-.02.15-.21.36-.45.6-.24.24-.54.56-.78.75z"/></svg>
-                            Entre na Comunidade
-                        </a>
+                    <div class="space-y-2">
+                        <h1 class="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
+                            Legal & Transparência <span class="text-blue-400">Promolize</span>
+                        </h1>
+                        <p class="text-sm text-gray-300 sm:text-base">Termos de Uso e Política de Privacidade.</p>
+                        <p class="text-xs text-gray-500">Última atualização: Dezembro de 2025</p>
                     </div>
                 </div>
-             </div>
 
-        <!-- NAVEGAÇÃO INTERNA (Abas simples) -->
-        <div class="flex justify-center space-x-6 mb-10 text-sm font-semibold border-b border-gray-700 pb-4">
-            <a href="#termos"
-                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Termos
-                de Uso</a>
-            <a href="#privacidade"
-                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Privacidade</a>
-            <a href="#contato"
-                class="text-blue-400 hover:text-blue-300 transition-colors border-b-2 border-transparent hover:border-blue-400 pb-1">Contato</a>
-        </div>
+                <div class="grid gap-3 sm:grid-cols-2 sm:gap-4 sm:max-w-2xl sm:mx-auto">
+                    <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer" class="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-950/30 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 sm:text-base">
+                        <svg class="h-5 w-5 shrink-0 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
+                        <span>Entre na Comunidade</span>
+                    </a>
 
-        <!-- CONTEÚDO DOS TERMOS -->
-        <div class="space-y-12 text-gray-300 leading-relaxed">
-
-            <!-- SEÇÃO: TERMOS DE USO -->
-            <section id="termos" class="scroll-mt-8">
-                <div class="flex items-center mb-4">
-                    <div class="w-1 h-6 bg-blue-500 rounded mr-3"></div>
-                    <h2 class="text-2xl font-bold text-white">Termos de Uso</h2>
+                    <a href="https://chat.whatsapp.com/DpACLDQT1u5LXlTFuOqhn8" target="_blank" rel="noopener noreferrer" class="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-green-500 via-green-400 to-green-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-green-950/30 transition-transform duration-200 hover:-translate-y-0.5 hover:from-green-600 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-300 sm:text-base">
+                        <svg class="h-5 w-5 shrink-0 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.71 6.11L0 24l6.2-1.62A11.92 11.92 0 0012 24c6.63 0 12-5.37 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02c-1.89 0-3.73-.5-5.34-1.44l-.38-.22-3.67.96.98-3.59-.25-.37A9.93 9.93 0 012.04 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.52-6.85c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.19.29-.75.98-.91 1.17-.17.2-.34.21-.63.07-.29-.15-1.21-.45-2.31-1.43-.85-.74-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.10-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.50h-.55c-.19 0-.51.07-.78.36-.26.29-1.00.98-1.00.98s-.36.36-.36.88.36 1.02.41 1.09c.07.1.73 1.11 1.75 1.8 1.21.81 2.22 1.03 2.58 1.15.36.1.6.07.82-.07.22-.15.88-.32 1.06-.45.17-.13.29-.19.45-.12.17.07.72.26 1.04.53.32.26.53.58.6.77.08.19.08.36.05.51-.02.15-.21.36-.45.6-.24.24-.54.56-.78.75z"/></svg>
+                        <span>Entre na Comunidade</span>
+                    </a>
                 </div>
+            </header>
 
-                <div class="space-y-6 text-sm md:text-base bg-gray-900/50 p-6 rounded-xl border border-gray-700/50">
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">1. Descrição do Serviço</h3>
-                        <p>O <strong>Promolize Bot</strong> é um serviço de curadoria automatizada (Bot) que monitora,
-                            seleciona e divulga promoções de produtos vendidos por lojas parceiras (como Magazine Luiza,
-                            Amazon, Mercado Livre, entre outros). Nós <strong>não vendemos</strong> produtos
-                            diretamente, não processamos pagamentos e não realizamos entregas.</p>
+            <nav class="mt-10 border-b border-gray-700/70 pb-4">
+                <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm font-semibold sm:text-base">
+                    <a href="#termos" class="border-b-2 border-transparent pb-1 text-blue-400 transition-colors hover:border-blue-400 hover:text-blue-300">Termos de Uso</a>
+                    <a href="#privacidade" class="border-b-2 border-transparent pb-1 text-blue-400 transition-colors hover:border-blue-400 hover:text-blue-300">Privacidade</a>
+                    <a href="#contato" class="border-b-2 border-transparent pb-1 text-blue-400 transition-colors hover:border-blue-400 hover:text-blue-300">Contato</a>
+                </div>
+            </nav>
+
+            <div class="mt-10 space-y-12 text-gray-300 leading-relaxed sm:mt-12 lg:space-y-14">
+
+                <section id="termos" class="scroll-mt-8">
+                    <div class="mb-4 flex items-center gap-3">
+                        <div class="h-6 w-1 rounded bg-blue-500"></div>
+                        <h2 class="text-2xl font-bold text-white sm:text-3xl">Termos de Uso</h2>
                     </div>
 
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">2. Isenção de Responsabilidade (Disclaimer)
-                        </h3>
-                        <p class="mb-2">Todas as compras são realizadas diretamente no site das lojas parceiras. O
-                            Promolize não se responsabiliza por:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
-                            <li>Alterações de preço feitas pela loja após a divulgação da oferta.</li>
-                            <li>Disponibilidade de estoque.</li>
-                            <li>Problemas de entrega, garantia ou defeito dos produtos.</li>
-                        </ul>
-                        <div class="mt-3 p-3 bg-yellow-900/20 border border-yellow-700/30 rounded-lg">
-                            <p class="text-yellow-200/80 text-xs">Nota: Os preços e condições podem mudar a qualquer
-                                momento sem aviso prévio por parte dos lojistas.</p>
+                    <div class="space-y-6 rounded-2xl border border-gray-700/50 bg-gray-950/50 p-5 text-sm shadow-lg shadow-black/10 sm:p-6 md:text-base lg:p-8">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">1. Descrição do Serviço</h3>
+                            <p>O <strong>Promolize Bot</strong> é um serviço de curadoria automatizada (Bot) que monitora, seleciona e divulga promoções de produtos vendidos por lojas parceiras (como Magazine Luiza, Amazon, Mercado Livre, entre outros). Nós <strong>não vendemos</strong> produtos diretamente, não processamos pagamentos e não realizamos entregas.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">2. Isenção de Responsabilidade (Disclaimer)</h3>
+                            <p>Todas as compras são realizadas diretamente no site das lojas parceiras. O Promolize não se responsabiliza por:</p>
+                            <ul class="list-disc space-y-1 pl-5 text-gray-400 marker:text-blue-500">
+                                <li>Alterações de preço feitas pela loja após a divulgação da oferta.</li>
+                                <li>Disponibilidade de estoque.</li>
+                                <li>Problemas de entrega, garantia ou defeito dos produtos.</li>
+                            </ul>
+                            <div class="rounded-xl border border-yellow-700/30 bg-yellow-900/20 p-3">
+                                <p class="text-xs text-yellow-200/80 sm:text-sm">Nota: Os preços e condições podem mudar a qualquer momento sem aviso prévio por parte dos lojistas.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">3. Divulgação de Afiliados</h3>
+                            <p>O Promolize participa de programas de associados e afiliados. Isso significa que, ao clicar em links compartilhados pelo bot e realizar uma compra, podemos receber uma comissão, sem nenhum custo adicional para o usuário. Isso ajuda a manter o serviço gratuito.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">4. Uso Aceitável</h3>
+                            <p>Você concorda em usar o bot apenas para fins pessoais e não comerciais. É proibido tentar explorar vulnerabilidades técnicas do bot ou utilizar scripts automatizados para extrair dados do nosso serviço.</p>
                         </div>
                     </div>
+                </section>
 
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">3. Divulgação de Afiliados</h3>
-                        <p>O Promolize participa de programas de associados e afiliados. Isso significa que, ao clicar
-                            em links compartilhados pelo bot e realizar uma compra, podemos receber uma comissão, sem
-                            nenhum custo adicional para o usuário. Isso ajuda a manter o serviço gratuito.</p>
+                <section id="privacidade" class="scroll-mt-8">
+                    <div class="mb-4 flex items-center gap-3">
+                        <div class="h-6 w-1 rounded bg-blue-500"></div>
+                        <h2 class="text-2xl font-bold text-white sm:text-3xl">Política de Privacidade</h2>
                     </div>
 
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">4. Uso Aceitável</h3>
-                        <p>Você concorda em usar o bot apenas para fins pessoais e não comerciais. É proibido tentar
-                            explorar vulnerabilidades técnicas do bot ou utilizar scripts automatizados para extrair
-                            dados do nosso serviço.</p>
+                    <div class="space-y-6 rounded-2xl border border-gray-700/50 bg-gray-950/50 p-5 text-sm shadow-lg shadow-black/10 sm:p-6 md:text-base lg:p-8">
+                        <p>Sua privacidade é importante. Esta política descreve como tratamos as informações no contexto da Lei Geral de Proteção de Dados (LGPD).</p>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">1. Dados Coletados</h3>
+                            <p>Ao interagir com o Promolize via Telegram ou Web, podemos ter acesso a:</p>
+                            <ul class="list-disc space-y-1 pl-5 text-gray-400 marker:text-blue-500">
+                                <li><strong>Dados Públicos do Telegram:</strong> Nome de usuário, ID numérico e foto de perfil (apenas se você iniciar uma interação direta com o bot).</li>
+                                <li><strong>Logs de Uso:</strong> Registros técnicos de interações para fins de segurança e melhoria do serviço.</li>
+                            </ul>
+                            <p class="text-gray-400">Nós <strong>não</strong> coletamos CPF, dados bancários, endereços ou senhas.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">2. Cookies e Rastreamento de Terceiros</h3>
+                            <p>Ao clicar nos links de ofertas divulgados, você será redirecionado para sites de terceiros (as lojas). Esses sites utilizam cookies para:</p>
+                            <ul class="list-disc space-y-1 pl-5 text-gray-400 marker:text-blue-500">
+                                <li>Rastrear a origem da visita para atribuição de comissão (afiliação).</li>
+                                <li>Processar o seu carrinho de compras.</li>
+                            </ul>
+                            <p>Recomendamos que leia a Política de Privacidade de cada loja parceira ao realizar uma compra.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-white">3. Compartilhamento de Dados</h3>
+                            <p>Nós <strong>não vendemos</strong> nem compartilhamos seus dados pessoais com terceiros para fins de marketing direto.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- SEÇÃO: POLÍTICA DE PRIVACIDADE -->
-            <section id="privacidade" class="scroll-mt-8">
-                <div class="flex items-center mb-4">
-                    <div class="w-1 h-6 bg-blue-500 rounded mr-3"></div>
-                    <h2 class="text-2xl font-bold text-white">Política de Privacidade</h2>
-                </div>
+                <section id="contato" class="border-t border-gray-700 pt-8 text-center sm:pt-10">
+                    <h3 class="mb-2 text-xl font-bold text-white sm:text-2xl">Ainda tem dúvidas?</h3>
+                    <p class="mb-6 text-sm text-gray-400 sm:text-base">Para questões relacionadas a estes termos ou privacidade.</p>
 
-                <div class="space-y-6 text-sm md:text-base bg-gray-900/50 p-6 rounded-xl border border-gray-700/50">
-                    <p>Sua privacidade é importante. Esta política descreve como tratamos as informações no contexto da
-                        Lei Geral de Proteção de Dados (LGPD).</p>
+                    <a href="mailto:promolizebot@gmail.com.br" class="group inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/30 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 sm:px-8 sm:text-base">
+                        <svg class="mr-2 h-5 w-5 shrink-0 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Entrar em Contato
+                    </a>
+                </section>
+            </div>
 
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">1. Dados Coletados</h3>
-                        <p class="mb-2">Ao interagir com o Promolize via Telegram ou Web, podemos ter acesso a:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
-                            <li><strong>Dados Públicos do Telegram:</strong> Nome de usuário, ID numérico e foto de
-                                perfil (apenas se você iniciar uma interação direta com o bot).</li>
-                            <li><strong>Logs de Uso:</strong> Registros técnicos de interações para fins de segurança e
-                                melhoria do serviço.</li>
-                        </ul>
-                        <p class="mt-2 text-gray-400">Nós <strong>não</strong> coletamos CPF, dados bancários, endereços
-                            ou senhas.</p>
-                    </div>
+            <footer class="mt-10 border-t border-gray-700/50 pt-6 text-center sm:mt-12">
+                <p class="text-xs text-gray-600">&copy; 2025 Promolize. Todos os direitos reservados.</p>
+            </footer>
 
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">2. Cookies e Rastreamento de Terceiros</h3>
-                        <p>Ao clicar nos links de ofertas divulgados, você será redirecionado para sites de terceiros
-                            (as lojas). Esses sites utilizam cookies para:</p>
-                        <ul class="list-disc pl-5 space-y-1 text-gray-400 marker:text-blue-500">
-                            <li>Rastrear a origem da visita para atribuição de comissão (afiliação).</li>
-                            <li>Processar o seu carrinho de compras.</li>
-                        </ul>
-                        <p class="mt-2">Recomendamos que leia a Política de Privacidade de cada loja parceira ao
-                            realizar uma compra.</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold text-white text-lg mb-2">3. Compartilhamento de Dados</h3>
-                        <p>Nós <strong>não vendemos</strong> nem compartilhamos seus dados pessoais com terceiros para
-                            fins de marketing direto.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SEÇÃO: CONTATO -->
-            <section id="contato" class="text-center pt-8 border-t border-gray-700">
-                <h3 class="text-xl font-bold text-white mb-2">Ainda tem dúvidas?</h3>
-                <p class="text-gray-400 mb-6 text-sm">Para questões relacionadas a estes termos ou privacidade.</p>
-
-                <!-- Botão estilo Painel de Controle -->
-                <a href="mailto:promolizebot@gmail.com.br"
-                    class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-200 shadow-lg group">
-                    <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none"
-                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                    Entrar em Contato
-                </a>
-            </section>
-
-            <!-- Botões de Comunidade (topo) - estilo consistente e responsivo -->
-             <div class="flex items-center justify-center box gap-5">
-                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
-                        <a href="https://t.me/Promolize" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold text-base shadow-lg hover:bg-blue-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-blue-300">
-                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M9.036 16.927c-.327 0-.271-.124-.384-.438l-1.04-3.437 8.385-5.01"/><path d="M9.036 16.927c.25 0 .36-.115.5-.253l1.34-1.29 2.785 2.05c.51.28.88.135 1.01-.47l1.83-8.63c.19-.77-.29-1.13-.78-.94l-11.36 4.37c-.77.3-.76.73-.13.92l2.91.91 6.75-4.25c.32-.2.62-.09.38.13"/></svg>
-                            Entre na Comunidade
-                        </a>
-                    </div>
-                                             
-                    <!-- Botões de Comunidade (final) - estilo consistente e responsivo -->
-                    <div class="mt-3 flex flex-wrap gap-4 justify-center items-center">
-                        <a href="https://chat.whatsapp.com/DpACLDQT1u5LXlTFuOqhn8" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-green-500 via-green-400 to-green-600 text-white rounded-lg font-semibold text-base shadow-lg hover:from-green-600 hover:to-green-500 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-green-300">
-                            <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.71 6.11L0 24l6.2-1.62A11.92 11.92 0 0012 24c6.63 0 12-5.37 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02c-1.89 0-3.73-.5-5.34-1.44l-.38-.22-3.67.96.98-3.59-.25-.37A9.93 9.93 0 012.04 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.52-6.85c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.67.15-.19.29-.75.98-.91 1.17-.17.2-.34.21-.63.07-.29-.15-1.21-.45-2.31-1.43-.85-.74-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.10-.19.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.50h-.55c-.19 0-.51.07-.78.36-.26.29-1.00.98-1.00.98s-.36.36-.36.88.36 1.02.41 1.09c.07.1.73 1.11 1.75 1.8 1.21.81 2.22 1.03 2.58 1.15.36.1.6.07.82-.07.22-.15.88-.32 1.06-.45.17-.13.29-.19.45-.12.17.07.72.26 1.04.53.32.26.53.58.6.77.08.19.08.36.05.51-.02.15-.21.36-.45.6-.24.24-.54.56-.78.75z"/></svg>
-                            Entre na Comunidade
-                        </a>
-                    </div>
-                </div>
-             </div>
-
-        <!-- Botões de Comunidade (final) já adicionados acima; remover duplicata -->
-
-        <!-- Rodapé do Cartão -->
-        <div class="mt-12 text-center border-t border-gray-700/50 pt-6">
-            <p class="text-gray-600 text-xs">
-                &copy; 2025 Promolize. Todos os direitos reservados.
-            </p>
         </div>
-
     </main>
 
 </body>
